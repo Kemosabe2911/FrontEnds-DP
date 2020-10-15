@@ -22,6 +22,7 @@ nav ul li.items{
     width: auto;
     margin: 0 16px;
     text-align: center;
+    transition: 0.5s;
 }
 nav ul li.items::after{
     position: absolute;
@@ -32,7 +33,7 @@ nav ul li.items::after{
     width: 100%;
     background: #33ffff;
     opacity: 0;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
 }
 
 nav ul li.items:hover::after{
@@ -58,7 +59,7 @@ nav ul li:hover a{
     color: #33ffff;
 }
 
-/*Medai Queries*/
+/*Media Queries*/
 @media all and (max-width: 900px){
     nav{
         padding: 5px 30px;
@@ -70,6 +71,7 @@ nav ul li:hover a{
         width: 100%;
         order: 3;
         display: none;
+        transition: 0.5s;
     }
     nav ul li.items.show{
         display: block;
