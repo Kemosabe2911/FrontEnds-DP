@@ -157,6 +157,7 @@ nav ul li:hover a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-shadow: #151515;
 }
 #tiles .container .stile{
     height: 250px;
@@ -178,11 +179,26 @@ nav ul li:hover a{
     font-size: 25px;
     width: 100px;
     height: 40px;
-    border-radius: 10px;
-    border-color: red;
-    background-color: red;
+    border-radius: 20px;
+    border-color: #000000;
+    border: none;
+    background-color: #000000;
 }
 #tiles .container button a{
     text-decoration: none;
     color: #ffffff;
+}
+
+@media (max-width: 768px){
+    #showcase{
+        min-height: 100px;
+    }
+    #tiles .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #tiles .container .stile{
+        margin-top: 30px;
+    }
 }
