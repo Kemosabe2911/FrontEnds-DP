@@ -130,6 +130,8 @@ nav ul li:hover a{
     }
 }
 
+
+
 /*Showcase*/
 #showcase{
     min-height: 230px;
@@ -141,6 +143,9 @@ nav ul li:hover a{
     font-size: 50px;
     margin-bottom: 10px;
 }
+
+
+
 
 /*Tiles Section*/
 #tiles .container{
