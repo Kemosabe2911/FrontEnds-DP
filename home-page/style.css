@@ -18,17 +18,48 @@ nav ul li{
 }
 
 nav ul li.items{
+    position: relative;
     width: auto;
     margin: 0 16px;
     text-align: center;
+}
+nav ul li.items::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 9px;
+    height: 2px;
+    width: 100%;
+    background: #33ffff;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover::after{
+    opacity: 1;
+    bottom: 13px;
 }
 
 nav ul li.logo{
     flex: 1;
     color: #ffffff;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: default;
+    user-select: none;
 }
 nav ul li a{
     color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+@media all and (max-width: 900px){
+    nav{
+        padding: 5px 30px;
+    }
+    nav ul li.items{
+        width: 100%;
+    }
 }
