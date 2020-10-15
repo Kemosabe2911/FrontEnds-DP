@@ -10,4 +10,19 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    padding: 15px 0;
+}
+
+nav ul li.items{
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+}
+
+nav ul li a{
+    color: #ffffff;
 }
