@@ -173,9 +173,6 @@ nav ul li:hover a{
     justify-content: space-around;
     align-items: center;
 }
-#tiles .container i{
-    font-size: 60px;
-}
 #tiles .container h2{
     font-size: 30px;
     color: #000000;
