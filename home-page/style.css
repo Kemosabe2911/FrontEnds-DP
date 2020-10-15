@@ -63,8 +63,16 @@ nav ul li:hover a{
     nav{
         padding: 5px 30px;
     }
+    nav ul li.logo{
+        order: 1;
+    }
     nav ul li.items{
         width: 100%;
+        order: 3;
+        display: none;
+    }
+    nav ul li.items.show{
+        display: block;
     }
     nav ul li.items:hover{
         border-radius: 5px;
@@ -73,5 +81,46 @@ nav ul li:hover a{
     }
     nav ul li.items:hover::after{
         opacity: 0;
+    }
+    .toggle{
+        order: 1;
+        transition: 0.5s;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .bars{
+        background: #ffffff ;
+        display: inline-block;
+        height: 3.5px;
+        position: relative;
+        width: 22px;
+        transition: 0.5s;
+    }
+    .bars::before,.bars::after{
+        background: #ffffff;
+        content: '';
+        display: inline-block;
+        height: 3.5px;
+        position: absolute;
+        width: 22px;
+        transition: 0.5s;
+    }
+    .bars::before{
+        top: 6px;
+    }
+    .bars::after{
+        top: -6px;
+    }
+    
+    .toggle.close .bars{
+        background: rgba(0, 0, 0, 0);
+    }
+    .toggle.close .bars::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .toggle.close .bars::after{
+        top: 0;
+        transform: rotate(135deg);
     }
 }
