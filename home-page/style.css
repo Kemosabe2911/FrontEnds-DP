@@ -149,7 +149,7 @@ nav ul li:hover a{
     flex-wrap: wrap;
 }
 #tiles .container .btile{
-    height: 280px;
+    height: 260px;
     width: 250px;
     background: #ffffff;
     border-radius: 20px;
@@ -161,7 +161,7 @@ nav ul li:hover a{
     transition: all 0.2s;
 }
 #tiles .container .stile{
-    height: 280px;
+    height: 260px;
     width: 250px;
     background: #ffffff;
     border-radius: 20px;
@@ -176,19 +176,12 @@ nav ul li:hover a{
 #tiles .container i{
     font-size: 60px;
 }
-#tiles .container button{
-    font-size: 25px;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    border-color: #000000;
-    border: none;
-    background-color: #000000;
+#tiles .container h2{
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
 }
-#tiles .container button a{
-    text-decoration: none;
-    color: #ffffff;
-}
+
 #tiles .container .btile:hover{
     transform: scale(1.02);
 }
