@@ -132,7 +132,7 @@ nav ul li:hover a{
 
 /*Showcase*/
 #showcase{
-    min-height: 400px;
+    min-height: 300px;
     color: #ffffff;
     text-align: center;
 }
@@ -140,4 +140,49 @@ nav ul li:hover a{
     margin-top: 100px;
     font-size: 50px;
     margin-bottom: 10px;
+}
+
+/*Tiles Section*/
+#tiles .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#tiles .container .btile{
+    height: 250px;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#tiles .container .stile{
+    height: 250px;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#tiles .container i{
+    font-size: 60px;
+}
+#tiles .container button{
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: red;
+    background-color: red;
+}
+#tiles .container button a{
+    text-decoration: none;
+    color: #ffffff;
 }
