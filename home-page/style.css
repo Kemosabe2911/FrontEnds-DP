@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +29,7 @@ nav ul li.items{
     margin: 0 16px;
     text-align: center;
     transition: 0.5s;
+    font-family: 'Roboto Slab', serif;
 }
 nav ul li.items::after{
     position: absolute;
@@ -47,6 +51,7 @@ nav ul li.items:hover::after{
 nav ul li.logo{
     flex: 1;
     color: #ffffff;
+    font-family: 'Roboto Slab', serif;
     font-size: 30px;
     font-weight: 900;
     cursor: default;
@@ -141,6 +146,7 @@ nav ul li:hover a{
 #showcase h1{
     margin-top: 100px;
     font-size: 50px;
+    font-family: 'Cabin', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -179,6 +185,7 @@ nav ul li:hover a{
     align-items: center;
 }
 #tiles .container h2{
+    font-family: 'Roboto Slab', serif;
     font-size: 30px;
     color: #000000;
     text-transform: uppercase;
