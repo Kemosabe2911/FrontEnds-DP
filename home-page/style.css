@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: url('images/ecommerce-3546296.jpg') no-repeat 
+}
 nav{
     background: #151515;
     padding: 5px 40px;
@@ -125,4 +128,16 @@ nav ul li:hover a{
         top: 0;
         transform: rotate(135deg);
     }
+}
+
+/*Showcase*/
+#showcase{
+    min-height: 400px;
+    color: #ffffff;
+    text-align: center;
+}
+#showcase h1{
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
