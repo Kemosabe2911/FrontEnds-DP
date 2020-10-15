@@ -23,6 +23,12 @@ nav ul li.items{
     text-align: center;
 }
 
+nav ul li.logo{
+    flex: 1;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+}
 nav ul li a{
     color: #ffffff;
 }
