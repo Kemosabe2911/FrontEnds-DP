@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url('home-page/images/ecommerce-3546296.jpg') no-repeat;
+    /*background: url('home-page/images/ecommerce-3546296.jpg') no-repeat;*/
     height: 100vh;
     /*overflow: hidden; */
 }
@@ -143,6 +143,7 @@ nav ul li:hover a{
 
 /*tiles-sell section*/
 #tiles-sell{
+    background: url('home-page/images/ecommerce-3546296.jpg') no-repeat;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -197,6 +198,7 @@ nav ul li:hover a{
 
 /*Year1 Section*/
 #year1-section{
+    background: url('home-page/images/ecommerce-3546296.jpg');
     width: 100%;
     height: 100vh;
     display: flex;
@@ -211,6 +213,30 @@ nav ul li:hover a{
     align-items: center;
 }
 
+#year1-section .container .tile{
+    height: 260px;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #151515;
+    transition: all 0.2s;
+    margin: 20px;
+}
+
+#year1-section .container h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#year1-section .container .tile:hover{
+    transform: scale(1.02);
+}
 
 @media (max-width: 768px){
     
