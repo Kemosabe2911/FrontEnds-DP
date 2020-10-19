@@ -242,12 +242,13 @@ nav ul li:hover a{
 }
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
 .container .set{
     display: flex;
+    justify-content: space-between;
 }
 .container .tile{
     height: 260px;
