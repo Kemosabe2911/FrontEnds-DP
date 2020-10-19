@@ -1,8 +1,15 @@
+function display(p){
+    p.style.display='block';
+    p.style.display='flex';
+    p.style.alignItems='center';
+}
+
+
 //Year1
 document.getElementById('year1').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
     var elmnt = document.getElementById("year1-section");
-    elmnt.style.display= 'block';
+    display(elmnt);
   elmnt.scrollIntoView();
   });
 
@@ -11,7 +18,7 @@ document.getElementById('year2').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
     document.getElementById("year1-section").style.display='none';
     var elmnt = document.getElementById("year2-section");
-    elmnt.style.display= 'block';
+    display(elmnt);
   elmnt.scrollIntoView();
   });
 
