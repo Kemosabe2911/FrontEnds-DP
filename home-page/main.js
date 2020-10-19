@@ -12,6 +12,7 @@ document.getElementById('sell').addEventListener('click',()  =>{
 
 document.getElementById('home-btn').addEventListener('click',()  =>{
   //window.location.href="#tiles.sell";
-  var elmnt = document.getElementById("nav_bar");
+  var elmnt = document.getElementById("navbar");
 elmnt.scrollIntoView();
 });
+
