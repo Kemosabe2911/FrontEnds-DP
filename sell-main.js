@@ -33,6 +33,16 @@ document.getElementById('year2').addEventListener('click',()  =>{
   elmnt.scrollIntoView();
   });
 
+//Year3
+document.getElementById('year3').addEventListener('click',()  =>{
+    //window.location.href="#tiles.sell";
+    document.getElementById("year1-section").style.display='none';
+    document.getElementById("year2-section").style.display='none';
+    var elmnt = document.getElementById("year3-section");
+    display(elmnt);
+  elmnt.scrollIntoView();
+  });
+
 //Home Buttons
 
 document.getElementById('home-btn0').addEventListener('click',()  =>{
@@ -49,6 +59,13 @@ document.getElementById('home-btn0').addEventListener('click',()  =>{
   });
  
 document.getElementById('home-btn2').addEventListener('click',()  =>{
+    //window.location.href="#tiles.sell";
+    document.getElementById("books-sell").style.display='none';
+    var elmnt = document.getElementById("navbar");
+  elmnt.scrollIntoView();
+  });
+ 
+  document.getElementById('home-btn3').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
     document.getElementById("books-sell").style.display='none';
     var elmnt = document.getElementById("navbar");
