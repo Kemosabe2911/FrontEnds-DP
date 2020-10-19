@@ -148,6 +148,7 @@ nav ul li:hover a{
 }
 
 
+
 /*tiles-sell section*/
 #tiles-sell{
     background: url('home-page/images/ecommerce-3546296.jpg') no-repeat;
@@ -157,6 +158,7 @@ nav ul li:hover a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 #tiles-sell .container{
     display: flex;
@@ -297,7 +299,7 @@ nav ul li:hover a{
         margin: 10px;
     }
     .container h2{
-        font-size: 25px;
+        font-size: 23px;
     }
     .container img{
         height: 70px;
