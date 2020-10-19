@@ -156,19 +156,7 @@ nav ul li:hover a{
     flex-wrap: wrap;
     align-items: center;
 }
-#tiles-sell .container .tile{
-    height: 260px;
-    width: 250px;
-    background: #ffffff;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: #151515;
-    transition: all 0.2s;
-    margin: 20px;
-}
+
 #tiles-sell .container .tile{
     height: 260px;
     width: 250px;
@@ -187,13 +175,9 @@ nav ul li:hover a{
     text-transform: uppercase;
 }
 
-#tiles-sell .container .btile:hover{
+#tiles-sell .container .tile:hover{
     transform: scale(1.02);
 }
-#tiles-sell .container .stile:hover{
-    transform: scale(1.02);
-}
-
 @media (max-width: 768px){
     
     #tiles-sell .container{
