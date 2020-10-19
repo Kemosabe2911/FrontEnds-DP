@@ -12,6 +12,13 @@ body{
     height: 100vh;
     /*overflow: hidden; */
 }
+#mysection{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 1s;
+    scroll-behavior: smooth;
+}
 nav{
     background: #151515;
     padding: 5px 40px;
