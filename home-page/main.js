@@ -14,13 +14,8 @@ document.getElementById('sell').addEventListener('click',()  =>{
 
 document.getElementById('home-btn').addEventListener('click',()  =>{
   //window.location.href="#tiles.sell";
-  var elmnt = document.getElementById("home-sell");
+  var elmnt = document.getElementById("navbar");
 elmnt.scrollIntoView();
 });
 
-//Year1
-document.getElementById('year1').addEventListener('click',()  =>{
-  //window.location.href="#tiles.sell";
-  var elmnt = document.getElementById("home-sell");
-elmnt.scrollIntoView();
-});
+

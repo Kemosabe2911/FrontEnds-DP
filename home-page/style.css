@@ -146,7 +146,9 @@ nav ul li:hover a{
     transition: 1s;
     scroll-behavior: smooth;
 }
-
+#my-section{
+    overflow: hidden; 
+}
 
 
 /*Showcase*/
@@ -307,3 +309,55 @@ nav ul li:hover a{
 #tiles-sell .container .tile:hover{
     transform: scale(1.02);
 }
+
+/*tiles-sell section*/
+#year1-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#year1-section .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#year1-section .container .tile{
+    height: 260px;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #151515;
+    transition: all 0.2s;
+    margin: 20px;
+}
+
+#year1-section .container h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#year1-section .container .btile:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px){
+    
+    #year1-section .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #year1-section .container .tile{
+        margin-top: 30px;
+    }
+}
+
