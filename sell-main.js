@@ -1,7 +1,7 @@
+//Function display
 function display(p){
-    p.style.display='block';
     p.style.display='flex';
-    p.style.alignItems='center';
+    /*p.style.alignItems='center';*/
 }
 
 
