@@ -10,6 +10,7 @@
 body{
     /*background: url('home-page/images/ecommerce-3546296.jpg') no-repeat;*/
     height: 100vh;
+    
     /*overflow: hidden; */
 }
 #mysection{
@@ -22,6 +23,9 @@ body{
 nav{
     background: #151515;
     padding: 5px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 nav ul{
     list-style: none;
