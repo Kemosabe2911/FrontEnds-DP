@@ -270,6 +270,9 @@ nav ul li:hover a{
 .container .htile{
     background: #33ffff;
 }
+.container .htile img{
+    rotate: 90deg;
+}
 
 .container h2{
     font-family: 'Roboto Slab', serif;
