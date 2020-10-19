@@ -12,8 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <!--Navbar-->
-    <nav>
+
+    <!--Home Section-->
+    <section id="home">
+        <!--Navbar-->
+    <nav id="nav_bar">
         <ul>
             <li class="logo">MPAC</li>
             <li class="items"><a href="#">Home</a></li>
@@ -23,30 +26,54 @@
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
+        <!--Showcase-->
+        <section id="showcase">
+            <div class="container">
+                <h1>Welcome User</h1>
+            </div>
+        </section>
 
-    <!--Showcase-->
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome User</h1>
-        </div>
-    </section>
+        <!--Tiles Section-->
+        <section id="tiles">
+            <div class="container">
+                <div id="buy" class="btile">
+                    <h2>Buy</h2>
+                    <img src="https://img.icons8.com/android/96/000000/buy.png"/>
+                    <!--<i class="fas fa-shopping-cart"></i>-->
+                </div>
+                <div id="sell" class="stile">
+                    <h2>Sell</h2>
+                    <img src="https://img.icons8.com/android/96/000000/sell.png"/>
+                    <!--<i class="fas fa-clipboard-check"></i>-->
+                </div>
+            </div>
+        </section>
 
-    <!--Tiles Section-->
-    <section id="tiles">
+
+        <!--Tiles Section-->
+    <section id="tiles-sell">
         <div class="container">
             <div id="buy" class="btile">
-                <h2>Buy</h2>
+                <h2>Hello</h2>
                 <img src="https://img.icons8.com/android/96/000000/buy.png"/>
                 <!--<i class="fas fa-shopping-cart"></i>-->
             </div>
             <div id="sell" class="stile">
-                <h2>Sell</h2>
+                <h2>World</h2>
+                <img src="https://img.icons8.com/android/96/000000/sell.png"/>
+                <!--<i class="fas fa-clipboard-check"></i>-->
+            </div>
+            <div id="home-btn" class="stile">
+                <h2>Home</h2>
                 <img src="https://img.icons8.com/android/96/000000/sell.png"/>
                 <!--<i class="fas fa-clipboard-check"></i>-->
             </div>
         </div>
+        
     </section>
 
+    </section>
+    
     <script src="main.js"></script>
     <script src='jquery.js'></script>
 </body>
