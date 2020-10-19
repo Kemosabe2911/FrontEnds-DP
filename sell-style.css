@@ -164,11 +164,14 @@ nav ul li:hover a{
     flex-wrap: wrap;
     align-items: center;
 }
+#tiles-sell .container .set{
+    display: flex;
+}
 
 #tiles-sell .container .tile{
     height: 260px;
     width: 250px;
-    margin: 20px;
+    margin: 40px;
     background: #ffffff;
     border-radius: 20px;
     display: flex;
@@ -187,17 +190,26 @@ nav ul li:hover a{
     transform: scale(1.02);
 }
 @media (max-width: 768px){
-    
     #tiles-sell .container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50vh;
+        
+    }
+    #tiles-sell .container .set{
+        display: flex;
     }
     #tiles-sell .container .tile{
-        height: 200px;
-        width: 200px;
+        display: flex;
+        height: 170px;
+        width: 170px;
         margin: 10px;
+    }
+    #tiles-sell .container h2{
+        font-size: 25px;
+    }
+    #tiles-sell .container img{
+        height: 70px;
     }
 }
 
@@ -219,7 +231,9 @@ nav ul li:hover a{
     flex-wrap: wrap;
     align-items: center;
 }
-
+#year1-section .container .set{
+    display: flex;
+}
 #year1-section .container .tile{
     height: 260px;
     width: 250px;
@@ -251,11 +265,25 @@ nav ul li:hover a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 200vh;
     }
     #year1-section .container .tile{
         height: 200px;
         width: 200px;
         margin: 10px;
+    }
+    #year1-section .container .set{
+        display: flex;
+    }
+    #year1-section .container .tile{
+        display: flex;
+        height: 170px;
+        width: 170px;
+        margin: 10px;
+    }
+    #year1-section .container h2{
+        font-size: 25px;
+    }
+    #year1-section .container img{
+        height: 70px;
     }
 }
