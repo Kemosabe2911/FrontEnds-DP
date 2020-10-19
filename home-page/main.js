@@ -10,9 +10,17 @@ document.getElementById('sell').addEventListener('click',()  =>{
   elmnt.scrollIntoView();
 });
 
+//Home Button
+
 document.getElementById('home-btn').addEventListener('click',()  =>{
   //window.location.href="#tiles.sell";
-  var elmnt = document.getElementById("navbar");
+  var elmnt = document.getElementById("home-sell");
 elmnt.scrollIntoView();
 });
 
+//Year1
+document.getElementById('year1').addEventListener('click',()  =>{
+  //window.location.href="#tiles.sell";
+  var elmnt = document.getElementById("home-sell");
+elmnt.scrollIntoView();
+});
