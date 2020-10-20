@@ -58,6 +58,11 @@
     cursor: pointer;
     margin-top: 1rem;
   }
+#form-body .choose:hover{
+    border: #000000;
+    color: #33ffff;
+    background: #000000;
+}   
   
   #file-chosen{
     margin-left: 0.3rem;
