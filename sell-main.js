@@ -17,12 +17,12 @@ document.getElementById('books').addEventListener('click',()  =>{
 
 
 //Year1
-document.getElementById('year1').addEventListener('click',()  =>{
+//document.getElementById('year1').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
     //var elmnt = document.getElementById("year-section");
     //display(elmnt);
   //elmnt.scrollIntoView();
-  });
+ // });
 
 //Year2
 document.getElementById('year2').addEventListener('click',()  =>{
@@ -53,6 +53,19 @@ document.getElementById('year4').addEventListener('click',()  =>{
     display(elmnt);
   elmnt.scrollIntoView();
   });
+/*
+//Form1
+document.getElementById('year1').addEventListener('click',()  =>{
+  //window.location.href="#tiles.sell";
+  //document.getElementById("year-section").style.display='none';
+  document.getElementById("year1-section").style.display='none';
+  document.getElementById("year2-section").style.display='none';
+  document.getElementById("year3-section").style.display='none';
+  var elmnt = document.getElementById("form-1");
+  display(elmnt);
+elmnt.scrollIntoView();
+});
+*/
 
 
 
@@ -93,3 +106,10 @@ document.getElementById('home-btn2').addEventListener('click',()  =>{
     var elmnt = document.getElementById("top");
   elmnt.scrollIntoView();
   });
+
+ /* document.getElementById('top-1').addEventListener('click',()  =>{
+    //window.location.href="#tiles.sell";
+    document.getElementById("books-sell").style.display='none';
+    var elmnt = document.getElementById("top");
+  elmnt.scrollIntoView();
+  });*/
