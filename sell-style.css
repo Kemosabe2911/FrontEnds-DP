@@ -243,7 +243,6 @@ nav ul li:hover a{
     align-items: center;
     text-align: center;
     display: none;
-    overflow: auto;
 }
 .container{
     display: flex;

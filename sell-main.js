@@ -27,7 +27,7 @@ document.getElementById('year1').addEventListener('click',()  =>{
 //Year2
 document.getElementById('year2').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
-    document.getElementById("year1-section").style.display='none';
+    //document.getElementById("year1-section").style.display='none';
     var elmnt = document.getElementById("year2-section");
     display(elmnt);
   elmnt.scrollIntoView();
