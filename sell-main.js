@@ -19,16 +19,16 @@ document.getElementById('books').addEventListener('click',()  =>{
 //Year1
 document.getElementById('year1').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
-    var elmnt = document.getElementById("year1-section");
-    display(elmnt);
-  elmnt.scrollIntoView();
+    //var elmnt = document.getElementById("year-section");
+    //display(elmnt);
+  //elmnt.scrollIntoView();
   });
 
 //Year2
 document.getElementById('year2').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
-    document.getElementById("year1-section").style.display='none';
-    var elmnt = document.getElementById("year2-section");
+    //document.getElementById("year-section").style.display='none';
+    var elmnt = document.getElementById("year1-section");
     display(elmnt);
   elmnt.scrollIntoView();
   });
@@ -36,9 +36,9 @@ document.getElementById('year2').addEventListener('click',()  =>{
 //Year3
 document.getElementById('year3').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
+    //document.getElementById("year-section").style.display='none';
     document.getElementById("year1-section").style.display='none';
-    document.getElementById("year2-section").style.display='none';
-    var elmnt = document.getElementById("year3-section");
+    var elmnt = document.getElementById("year2-section");
     display(elmnt);
   elmnt.scrollIntoView();
   });
@@ -46,10 +46,10 @@ document.getElementById('year3').addEventListener('click',()  =>{
 //Year4
 document.getElementById('year4').addEventListener('click',()  =>{
     //window.location.href="#tiles.sell";
+    //document.getElementById("year-section").style.display='none';
     document.getElementById("year1-section").style.display='none';
     document.getElementById("year2-section").style.display='none';
-    document.getElementById("year3-section").style.display='none';
-    var elmnt = document.getElementById("year4-section");
+    var elmnt = document.getElementById("year3-section");
     display(elmnt);
   elmnt.scrollIntoView();
   });
