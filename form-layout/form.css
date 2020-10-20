@@ -49,11 +49,23 @@
     margin-bottom: 30px;
     border: none;
 }
-
+#form-body .choose {
+    background-color: #33ffff;
+    color: #000000;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #file-chosen{
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+  }
 #form-body .sub-button{
     height: 50px;
     width: 100px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,4 +80,4 @@
   #form-body .sub-button:hover{
       background-color: black;
       color: white;
-  }    
+}  

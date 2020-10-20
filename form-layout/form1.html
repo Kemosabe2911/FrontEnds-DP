@@ -60,8 +60,16 @@
                 <div class="book-price">
                     Price <input type="number"  class="input-box">
                 </div>
-                <div class="book-image">
-                    Image <input type="file" class="input-file" >
+                <div class="input-file">
+                    <!-- actual upload which is hidden -->
+                    <input type="file" id="actual-btn" hidden/>
+
+                    <!-- our custom upload button -->
+                    <label class="choose" for="actual-btn">Choose Image</label>
+
+                    <!-- name of file chosen -->
+                    <span id="file-chosen">No Image chosen</span>
+                  
                 </div>
                 <div class="submit">
                     <button class="sub-button">Submit</button>
