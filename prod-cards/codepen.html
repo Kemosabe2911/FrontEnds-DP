@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/css">
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+        
+        /**
+         * Material Design Shadow Mixin
+         * Ref: https://codepen.io/HugoGiraudel/pen/yyaGaP
+         */
+        @function top-shadow($depth) {
+          $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+          $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+          $color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
+        
+          @return 0 $primary-offset $blur $color;
+        }
+        @function bottom-shadow($depth) {
+          $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+          $blur: nth(1 3 3 5 6, $depth) * 4px;
+          $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+        
+          @return 0 $primary-offset $blur $color;
+        }
+        @mixin card($depth) {
+          @if $depth < 1 {
+            box-shadow: none;
+          } @else if $depth > 5 {
+            @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+          } @else {
+            box-shadow: bottom-shadow($depth), top-shadow($depth);
+          }
+        }
+        
+        $textlight: #FFFFFF;
+        $textmed: #B6D0D6;
+        $textdark: #294E55;
+        $darkblue: #2C3E50;
+        $darkbluehover: lighten($darkblue, 10%);
+        $button: #E74C3C;
+        $buttonhover: darken($button, 10%);
+        $textbutton: #ECF0F1;
+        $recommended: #3498DB;
+        $textrecommended: lighten($recommended, 40%);
+        
+        body {
+            margin: 0 auto;
+            font-family: 'Montserrat',
+        sans-serif;
+            background-color: #ECF0F1;
+        }
+        
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        .products-title {
+            text-align: center;
+            margin: 2em 0 0;
+            color: $textdark;
+            h2 {
+                margin: 0;
+            }
+        }
+        
+        .carousel {
+            .flickity-prev-next-button {
+                display: none;
+                .arrow {
+                    fill: $textdark;
+                } // .arrow
+            } //.flickity-prev-next-button
+            .flickity-page-dots {
+                display: none;
+                position: relative;
+                bottom: 5px;
+                margin: 1em 0;
+                .dot {
+                    opacity: 1;
+                    background-color: $textmed;
+                    &.is-selected {
+                        background-color: $textdark;
+                    } // .dots.is-selected
+                } // .dots
+            } // .flickity-page-dots
+        }
+        
+        figure.product-card {
+            width: 30%;
+            margin: 8% 0 5%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: scale(1);
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            &.is-selected {
+                transform: scale(1);
+                transition: transform 0.5s ease;
+            }
+            .fig-head {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: $darkblue;
+                text-align: center;
+                padding: 10% 5%;
+                transition: all 0.5s ease;
+            } // fig-head
+            h2 {
+                color: $textlight;
+                font-size: 20px;
+                line-height: 23px;
+                margin: 0;
+            } // h2
+            .fig-body {
+                width: 95%;
+                height: 600px;
+                padding: 8%;
+                display: block;
+                background: $textlight;
+                position: relative;
+                transition: all 0.5s ease;
+                .button-text {
+                    display: flex;
+                    position: absolute;
+                    bottom: 5%;
+                    width: 80%;
+                    margin: 0 auto;
+                    font-weight: 700;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    transition: all 0.5s ease;
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        cursor: pointer;
+                        background-color: $button;
+                        color: $textbutton;
+                        padding: 1.5em;
+                        transition: all 0.5s ease;
+                        text-decoration: none;
+                        &:hover {
+        
+                        }
+                    }
+                }
+                &:hover {
+                    @include card(4);
+                    
+                    .fig-head {
+                        background-color: $darkbluehover;
+                    } // .fig-head hover
+                    .button-text {
+                        @include card(1);
+                        background-color: $buttonhover;
+                        color: lighten($textbutton, 10%);
+                    }
+                } // :hover
+            } // fig-body
+        } // .product-card
+        #recommended {
+            position: absolute;
+            display: inline-block;
+            top: -48px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 16px 0;
+            margin: auto;
+            max-width: 190px;
+            background-color: $recommended;
+            font-size: 13px;
+            color: $textrecommended;
+            letter-spacing: 4px;
+            text-align: center;
+            text-transform: uppercase;
+        } // #recommended
+        ul.product-checklist {
+            position: absolute;
+            list-style-type: none;
+            top: 125px;
+            padding: 0 34px;
+            li {
+                position: relative;
+                font-size: 16px;
+                color: #BFBFBF;
+                font-weight: 300;
+                letter-spacing: 0px;
+                line-height: 25px;
+            margin-bottom: 25px;
+                -webkit-font-smoothing: antialiased;
+                &:nth-last-of-type(1) {
+                    margin-bottom: 0;
+                }
+            } // li
+            li.check {
+                color: $darkblue;
+                font-weight: 400;
+                &:before {
+                    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMRJREFUeNpiYCADaDbsVADRjGRonA+kAoDYkZFEjQlAaj6U+4GJTI0gUMhIpEYDIHUeSSjxeoP7AiYiNe5HEloA0kgwwKChCrJRAEljIkyeCaooAIgF0DSC+OuRNB5A1gjWDA0IkKL9MAOgNMipBlB1F4A4EN1ljECF75FMBylyhIZqALIY0NYP6JqZoIphEiCb7iNp/AAN2Q/YwoQRLUSR/f0BauMFXAHKiCVKYAaANB7AFxvweIba4Ijk1AOE0gBAgAEAgNJJfyEiUycAAAAASUVORK5CYII=');
+                    position: absolute;
+                    left: -34px;
+                    top: 3px;
+                } // :before
+            } // li.check
+        } // ul.product-checklist
+        .product-description {
+            position: relative;
+            margin: 125px 0 32px;
+            // height: 286px;
+        }
+        
+        
+        @media only screen and (max-width: 850px) {
+            .container {
+              width: initial;
+              padding: 0;
+              margin: 0;
+            }
+            .carousel {
+              .flickity-prev-next-button {
+                display: block;
+              } //.flickity-prev-next-button
+              .flickity-page-dots {
+                display: block;
+                bottom: 30px;
+              } // .flickity-page-dots
+            } // .carousel
+            figure.product-card {
+              -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+              width: 40%;
+              margin: 10% 0 7%;
+              &.is-selected {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                z-index: 100;
+                @include card(4);
+                .fig-head {
+                  background-color: $darkbluehover;
+                }
+              }
+              &:hover {
+                box-shadow: none;
+              }
+              .fig-head {
+                padding: 8% 1%;
+              } // fig-head
+              h2 {
+                font-size: 16px;
+                line-height: 23px;
+              } // h2
+              .fig-body {
+                width: 100%;
+                height: 420px;
+                padding: 10%;
+                background: #ffffff;
+                position: relative;
+                .button-text {
+                  left: 0;
+                  right: 0;
+                  margin: 0 9%;
+                  a {
+                    width: 100%;
+                    text-align: center;
+                  }
+                }
+              } // fig-body
+            } // .product-card
+            #recommended {
+              top: -45px;
+              padding: 15px 0;
+              max-width: 100%;
+              font-size: 12px;
+              letter-spacing: 4px;
+            } // .recommended
+            ul.product-checklist {
+              padding-left: 22px;
+              width: 80%;
+              top: 110px;
+              li {
+                font-size: 14px;
+                line-height: 32px;
+                        margin-bottom: 5px;
+              } // li
+              li.check {
+                &:before {
+                  left: -23px;
+                  top: 2px;
+                } // :before
+              } // li.check
+            } // ul.product-checklist
+            .product-description {
+              position: relative;
+              margin: 80px 0 0;
+              p {
+                font-size: 13px;
+                line-height: 20px;
+              }
+            }
+          }
+        
+        @media only screen and (max-width: 640px) {
+            .carousel {
+                .flickity-prev-next-button {
+                    display: block;
+                }
+                .flickity-page-dots {
+                    display: block;
+                }
+            }
+            figure.product-card {
+                transform: scale(0.9);
+                width: 70%;
+                max-width: 300px;
+                margin: 20% 0;
+                &.is-selected {
+                    transform: scale(1);
+                    z-index: 100;
+                }
+                .fig-head {
+                    padding: 8% 1%;
+                } // fig-head
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 15px;
+                } // h2
+                .fig-body {
+                    height: 420px;
+                    padding: 10%;
+                } // fig-body
+            } // .product-card
+            #recommended {
+                top: -40px;
+                padding: 12px 0;
+                font-size: 13px;
+                letter-spacing: 4px;
+            } // .recommended
+            ul.product-checklist {
+                padding-left: 22px;
+                width: 80%;
+                top: 110px;
+                li {
+                    font-size: 13px;
+                    line-height: 26px;
+                } // li
+                li.check {
+                    &:before {
+                        left: -23px;
+                        top: 2px;
+                    } // :before
+                } // li.check
+            } // ul.product-checklist
+            .product-description {
+                margin: 60px 0 0;
+                p {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="container">
+	<div class="products-title">
+		<h1>Responsive Product Cards</h1>
+		<h2>(Resize Me)</h2>
+	</div>
+
+	<div class="carousel">
+
+		<figure class="product-card carousel-cell">
+			<div class="fig-body">
+				<div class="fig-head">
+					<h2>Intro Product</h2>
+				</div>
+				<ul class="product-checklist">
+					<li>Product Feature 1</li>
+					<li class="check">Product Feature 2</li>
+					<li class="check">Product Feature 3</li>
+					<li class="check">Product Feature 4</li>
+					<li class="check">Product Feature 5</li>
+					<li>Product Feature 6</li>
+				</ul>
+				<div class="button-text">
+					<a class="learn" href=""><span>Buy Now</span></a>
+				</div>
+			</div>
+		</figure>
+		<figure class="product-card carousel-cell">
+			<div class="fig-body">
+				<div class="fig-head">
+					<h2>Middle Product</h2>
+				</div>
+				<ul class="product-checklist">
+					<li>Product Feature 1</li>
+					<li class="check">Product Feature 2</li>
+					<li>Product Feature 3</li>
+					<li>Product Feature 4</li>
+					<li class="check">Product Feature 5</li>
+					<li class="check">Product Feature 6</li>
+				</ul>
+				<div class="button-text">
+					<a class="learn" href=""><span>Buy Now</span></a>
+				</div>
+			</div>
+		</figure>
+		<figure class="product-card carousel-cell">
+			<span id="recommended">Recommended</span>
+			<div class="fig-body">
+				<div class="fig-head">
+					<h2>Full-Featured Product</h2>
+				</div>
+				<ul class="product-checklist">
+					<li class="check">Product Feature 1</li>
+					<li class="check">Product Feature 2</li>
+					<li class="check">Product Feature 3</li>
+					<li class="check">Product Feature 4</li>
+					<li class="check">Product Feature 5</li>
+					<li class="check">Product Feature 6</li>
+				</ul>
+				<div class="button-text">
+					<a class="learn" href=""><span>Buy Now</span></a>
+				</div>
+			</div>
+		</figure>
+
+	</div>
+</div>
