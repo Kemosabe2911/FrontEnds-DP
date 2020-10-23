@@ -44,6 +44,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 20px;
     align-items: stretch;
+    transition: 2s;
   }
   
   .grid > article {
