@@ -65,3 +65,10 @@ body {
   .grid .text {
     padding: 20px;
   }
+
+  ul{
+    text-align: center;
+  }
+  ul li{
+    list-style: none;
+  }
