@@ -7,3 +7,11 @@
 body{
     background: #ffffff;
 }
+
+.container{
+    width: 90vw;
+    background: #cccccc;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
