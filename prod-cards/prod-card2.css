@@ -53,10 +53,18 @@ body{
     background: #0c81f6;
     color: #ffffff;
     border: 1px solid #0c81f6;
+    transition: 1s;
 }
 
 .prod-card .btns .cart{
     background: #4dff4d;
-    color: #000000;
+    color: #ffffff;
     border: 1px solid  #4dff4d;
+}
+
+.prod-card .btns .purchase:hover{
+    border: 2px solid #000000;
+}
+.prod-card .btns .cart:hover{
+    border: 2px solid #000000;
 }
