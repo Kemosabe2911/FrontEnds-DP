@@ -23,3 +23,17 @@ body{
  margin: 20px;
  border-radius: 5px;
 }
+
+.prod-card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.prod-card img{
+    width: 250px;
+    height: 200px;
+    margin: 10px 0px;
+}
