@@ -26,6 +26,10 @@ body{
  box-shadow: 2px 2px 2px #888888;
 }
 
+.prod-card:hover{
+    transform: scale(1.01);
+}
+
 .prod-card .text{
     display: flex;
     flex-direction: column;
