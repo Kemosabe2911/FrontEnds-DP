@@ -57,9 +57,10 @@ body{
 }
 
 .prod-card .btns .cart{
-    background: #4dff4d;
+    background: #00e600;
     color: #ffffff;
-    border: 1px solid  #4dff4d;
+    border: 1px solid  #00e600;
+    transition: 1s;
 }
 
 .prod-card .btns .purchase:hover{
