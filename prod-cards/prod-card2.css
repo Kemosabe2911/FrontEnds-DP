@@ -10,7 +10,7 @@ body{
 
 .container{
     width: 90vw;
-    background: #cccccc;
+    background: #ffffff;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +22,7 @@ body{
  height: 400px;  
  margin: 20px;
  border-radius: 5px;
+ box-shadow: 2px 2px 2px #888888;
 }
 
 .prod-card .text{
