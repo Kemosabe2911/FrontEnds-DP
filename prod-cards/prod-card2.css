@@ -70,8 +70,8 @@ body{
 }
 
 .prod-card .btns .purchase:hover{
-    border: 2px solid #000000;
+    opacity: 0.9;
 }
 .prod-card .btns .cart:hover{
-    border: 2px solid #000000;
+    opacity: 0.9;
 }
