@@ -36,6 +36,7 @@ body{
     width: 250px;
     height: 200px;
     margin: 10px 0px;
+    border-radius: 5px;
 }
 
 .prod-card .btns{
@@ -43,4 +44,19 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 15px 20px;
+}
+.prod-card .btns input{
+    width: 100px;
+    height: 32px;
+}
+.prod-card .btns .purchase{
+    background: #0c81f6;
+    color: #ffffff;
+    border: 1px solid #0c81f6;
+}
+
+.prod-card .btns .cart{
+    background: #4dff4d;
+    color: #000000;
+    border: 1px solid  #4dff4d;
 }
