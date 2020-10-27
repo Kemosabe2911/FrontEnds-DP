@@ -15,3 +15,11 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
+.prod-card{
+ background: #ffffff;
+ width: 300px;
+ height: 400px;  
+ margin: 20px;
+ border-radius: 5px;
+}
