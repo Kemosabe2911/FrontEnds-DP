@@ -17,7 +17,6 @@ html,body{
 .tabcards{
     display: flex;
     flex-direction: row;  
-    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
 }
