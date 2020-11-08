@@ -366,6 +366,8 @@ nav ul li:hover a{
 
 
 /* Home Page */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
 .info-container{
     width: 90vw;
     height: 90vh;
@@ -387,6 +389,7 @@ nav ul li:hover a{
 .info-container .text-content p{
     text-align: center;
     font-size: 26px;
+    font-family: 'Cormorant Garamond', serif;
 }
 .info-container .text-content .btns{
     display: flex;
