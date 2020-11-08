@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alegreya', serif;
 } 
 
 html,body{
@@ -19,6 +18,7 @@ html,body{
     flex-direction: row;  
     flex-wrap: wrap;
     margin-top: 20px;
+    font-family: 'Alegreya', serif;
 }
 
 
@@ -101,20 +101,32 @@ html,body{
 #btns{
     display: flex;
     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #btns button{
-    border: 1px solid #3498db;
     background: none;
     padding: 6px 16px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 5px 20px;
+    transition: 0.8s;
 }
 
-#btns .btn:hover{
-    background-color: rgb(7, 2, 255);
-    color: white;
+#btns .btn1{
+    border: 1px solid #3498db;
+    color: #3498db;
 }
+
+#btns .btn2{
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+#btns .btn1:hover{
+    color: #fff;
+    background: #3498db;
+}
+
 
 @media (max-width: 768px){
     .tabcards{
