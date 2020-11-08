@@ -444,3 +444,28 @@ nav ul li:hover a{
     font-weight: bold;
     z-index: -1;
 }
+
+@media (max-width: 768px){
+    body{
+        overflow: auto;
+    }
+    .info-container{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .info-container .image{
+        flex: 1;
+        order: 1;
+    }   
+    .info-container .image img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .info-container .text-content{
+        order: 2;
+        flex: 1;
+    }
+}
