@@ -141,7 +141,7 @@ html,body{
     }
     #btns{
         display: flex;
-        margin: 5px;
+        flex-direction: column;
     }
     .container{
         height: 350px;
