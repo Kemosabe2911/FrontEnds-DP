@@ -13,7 +13,7 @@ body{
     height: 100vh;
 }
 nav{
-    background: #151515;
+    background: transparent;
     padding: 5px 40px;
     position: sticky;
     top: 0;
@@ -384,7 +384,7 @@ nav ul li:hover a{
     font-size: 50px;
     font-family: 'Cabin', sans-serif;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .info-container .text-content p{
     text-align: center;
@@ -410,7 +410,7 @@ nav ul li:hover a{
     position: relative;
     display: inline-block;
     padding: 15px 36px;
-    margin: 50px;
+    margin: 30px 50px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -466,6 +466,19 @@ nav ul li:hover a{
     }
     .info-container .text-content{
         order: 2;
-        flex: 1;
+        flex: 2;
+    }
+    .info-container .text-content h1{
+        font-size: 40px;
+    }
+    .info-container .text-content p{
+        display: none;
+    }
+    .info-container .text-content .btns{
+        flex-direction: column;
+        padding: 0;
+    }
+    .info-container a{
+        margin:-30px;
     }
 }
