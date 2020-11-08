@@ -419,9 +419,7 @@ nav ul li:hover a{
 }
 
 .info-container .text-content a:hover{
-    background-size: 400%;
     color: #000000;
-    background: linear-gradient(90deg,#0162c8, #55e7fc);
 }
 
 .info-container .text-content a::before{
@@ -441,4 +439,5 @@ nav ul li:hover a{
 .info-container .text-content a:hover::before{
     opacity: 1;
     font-weight: bold;
+    z-index: -1;
 }
