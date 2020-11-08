@@ -366,3 +366,10 @@ nav ul li:hover a{
 
 
 /* Home Page */
+.info-container{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
