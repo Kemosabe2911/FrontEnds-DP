@@ -382,7 +382,11 @@ nav ul li:hover a{
     font-size: 50px;
     font-family: 'Cabin', sans-serif;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+.info-container .text-content p{
+    text-align: center;
+    font-size: 26px;
 }
 .info-container .text-content .btns{
     display: flex;
@@ -411,4 +415,30 @@ nav ul li:hover a{
     letter-spacing: 2px;
     border-radius: 40px;
     background: linear-gradient(90deg,#0162c8, #55e7fc);
+    transition: 0.5s;
+}
+
+.info-container .text-content a:hover{
+    background-size: 400%;
+    color: #000000;
+    background: linear-gradient(90deg,#0162c8, #55e7fc);
+}
+
+.info-container .text-content a::before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border-radius: 40px;
+    filter: blur(40px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.info-container .text-content a:hover::before{
+    opacity: 1;
+    font-weight: bold;
 }
