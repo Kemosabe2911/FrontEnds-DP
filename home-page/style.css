@@ -560,6 +560,11 @@ nav ul li:hover a{
 
 
 /*Footer*/
+html{
+    scroll-behavior: smooth;
+}
+
+
 .myfooter{
     color:white;
     padding:20px;
