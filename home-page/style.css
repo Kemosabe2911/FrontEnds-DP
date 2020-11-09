@@ -550,10 +550,11 @@ nav ul li:hover a{
 .myfooter{
     color:white;
     font-size: 20px;
-    height: 5vh;
+    height: 10vh;
     margin: 30px 0px;
     border-top: 1px solid #33ffff;
     text-align: center;
+    line-height: 1.5;
     padding:20px;
     background-color:  #000000;
     width: 100%;
