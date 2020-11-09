@@ -494,7 +494,7 @@ nav ul li:hover a{
     }
     .serv-container .service h1{
         font-size: 35px;
-        
+
     }
 }
 
@@ -544,4 +544,17 @@ nav ul li:hover a{
     padding: 20px;
     line-height: 2;
     font-size: 17px;
+}
+
+/*Footer*/
+.myfooter{
+    color:white;
+    font-size: 20px;
+    height: 5vh;
+    margin: 30px 0px;
+    border-top: 1px solid #33ffff;
+    text-align: center;
+    padding:20px;
+    background-color:  #000000;
+    width: 100%;
 }
