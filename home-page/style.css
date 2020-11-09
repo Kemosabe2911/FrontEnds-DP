@@ -438,6 +438,9 @@ nav ul li:hover a{
     opacity: 0;
     transition: 1s;
 }
+.info-container .text-content .start-btns{
+    border-radius: 0px;
+}
 
 .info-container .text-content a:hover::before{
     opacity: 1;
