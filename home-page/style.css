@@ -521,6 +521,7 @@ nav ul li:hover a{
 .serv-container .service h1{
     text-align: right;
     font-size: 40px;
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 .serv-container .service span{
@@ -528,4 +529,9 @@ nav ul li:hover a{
     width: 100%;
     border: 1px solid #33ffff;
     height: 1px;
+}
+.serv-container .service .serv-text{
+    padding: 20px;
+    line-height: 2;
+    font-size: 18px;
 }
