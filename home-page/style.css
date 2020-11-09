@@ -1,6 +1,8 @@
 /*Font family*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Noticia+Text:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -370,7 +372,6 @@ nav ul li:hover a{
 
 
 /* Home Page */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
 
 .info-container{
     width: 90vw;
@@ -519,6 +520,7 @@ nav ul li:hover a{
     line-height: 1.5;
 }
 .serv-container .service h1{
+    font-family: 'Mulish', sans-serif;
     text-align: right;
     font-size: 40px;
     text-transform: uppercase;
@@ -531,7 +533,8 @@ nav ul li:hover a{
     height: 1px;
 }
 .serv-container .service .serv-text{
+    font-family: 'Noticia Text', serif;
     padding: 20px;
     line-height: 2;
-    font-size: 18px;
+    font-size: 17px;
 }
