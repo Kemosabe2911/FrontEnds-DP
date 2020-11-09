@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--AOS cdn-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--FLickity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
     <section id="Home">
@@ -60,6 +62,13 @@
         </div>
         </div>
     </section>
+    <section id="carousal">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell"><img style="width: 800px; height: 500px;" src="images/books_library_old_111388_1280x720.jpg"></div>
+            <div class="carousel-cell"><img style="width: 800px; height: 500px;" src="images/wooden-floor-hand-tools-safety-glasses-wallpaper-preview.jpg"></div>
+            <div class="carousel-cell">...</div>
+        </div>
+    </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -87,6 +96,7 @@
 
 });
       </script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="main.js"></script>
     <script src='jquery.js'></script>
 </body>
