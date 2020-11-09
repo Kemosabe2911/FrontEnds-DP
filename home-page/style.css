@@ -14,6 +14,8 @@ body{
     background: url('images/ecommerce-3546296.jpg') no-repeat;
     height: 100vh;
 }
+
+
 nav{
     background: transparent;
     padding: 5px 40px;
@@ -487,3 +489,6 @@ nav ul li:hover a{
         margin:-30px;
     }
 }
+
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
