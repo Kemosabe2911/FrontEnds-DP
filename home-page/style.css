@@ -489,6 +489,13 @@ nav ul li:hover a{
     .info-container a{
         margin:-30px;
     }
+    .serv-container .image2{
+        display: none;
+    }
+    .serv-container .service h1{
+        font-size: 35px;
+        
+    }
 }
 
 .nav-colored { background-color:#000; }
