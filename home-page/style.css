@@ -502,11 +502,10 @@ nav ul li:hover a{
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    padding: 50px;
 }
 
 .serv-container .image2{
-    margin-top: 30px;
+    margin-top: 60px;
     width: 500px;
     height: 400px;
 }
@@ -514,6 +513,7 @@ nav ul li:hover a{
 .serv-container .service{
     text-align: right;
     display: flex;
+    justify-content: right;
     flex-direction: column;
     margin-bottom: 60px;
     line-height: 1.5;
@@ -522,4 +522,10 @@ nav ul li:hover a{
     text-align: right;
     font-size: 40px;
     margin-bottom: 20px;
+}
+.serv-container .service span{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #33ffff;
+    height: 1px;
 }
