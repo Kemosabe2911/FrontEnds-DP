@@ -14,7 +14,6 @@
 
 .dash-container .dash-item{
     display: flex;
-    justify-content: space-between;
     border: 2px solid #cccccc;
     border-radius: 10px;
     width: 80%;
@@ -22,7 +21,36 @@
 }
 .dash-container .dash-item img{
     width: 380px;
-    height: 220px;
+    height: 230px;
     border-radius: 9px 0px 0px 9px;
     border: #cccccc;
+}
+.dash-container .dash-item .dash-text{
+    display: flex;
+    width: 550px;
+    margin: 20px;
+    justify-content: space-between;
+}
+.dash-container .dash-item .dash-text h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.dash-container .dash-item .dash-text p{
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 20px;
+}
+.dash-container .dash-item a{
+    margin: 65px 0px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    padding: 15px 10px;
+    border: 2px solid #000000;
 }
