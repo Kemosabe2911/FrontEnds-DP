@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,20 +9,28 @@
 .contact-container {
     width: 100vw;
     background: #000000;         
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
     padding: 50px;
   }
 .contact-container .contact-form{
-    width: 40vw;
+    width: 400px;
     margin: auto;
     height: 600px;
     display: flex;
     flex-direction: column;
 }
 .contact-container .contact-form h1{
-    font-size: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.contact-container .contact-form span{
+  width: 100px;
+  color: #ffffff;
+  margin: 10px 150px;
+  border: 1px solid #ffffff;
 }
 
 .contact-container .contact-form label,h1{
