@@ -389,7 +389,7 @@ nav ul li:hover a{
     font-size: 50px;
     font-family: 'Cabin', sans-serif;
     text-align: center;
-    margin-bottom: 60px;
+    padding: 60px;
 }
 .info-container .text-content p{
     text-align: center;
@@ -478,6 +478,7 @@ nav ul li:hover a{
     }
     .info-container .text-content h1{
         font-size: 40px;
+        padding: 20px;
     }
     .info-container .text-content p{
         display: none;
