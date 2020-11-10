@@ -12,9 +12,13 @@
     font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 50px 100px;
+  }
+  .contact-container .contact-image{
+    order: 2;
   }
 .contact-container .contact-form{
+    order: 1;
     width: 400px;
     margin: auto;
     height: 600px;
