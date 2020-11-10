@@ -61,3 +61,22 @@
     background-color: #000000;
     color: #ffffff;
 }
+@media(max-width: 768px){
+    .dash-container .dash-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .dash-container .dash-item img{
+        width: 300px;
+        height: 200px;
+    }
+    .dash-container .dash-item .dash-text{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .dash-container .dash-item .dash-text-content{
+        padding: 30px;
+    }
+}
