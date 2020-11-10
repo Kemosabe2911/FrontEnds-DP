@@ -5,11 +5,14 @@
 }
 .contact-container {
     width: 100vw;
-    background: #1a1a1a;         
+    background: #000000;         
     font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    padding: 50px;
   }
 .contact-container .contact-form{
-    width: 50vw;
+    width: 40vw;
     margin: auto;
     height: 600px;
     display: flex;
@@ -29,35 +32,27 @@
   text-align: center;
 }
 
-.contact-container .contact-form input{
+.contact-container .contact-form .input1{
     height: 30px;
 }
 
-.contact-container .contact-form input, textarea {
+.contact-container .contact-form .input1, textarea {
   width: 100%;
   margin: 15px;
   padding: 5px;
 } 
 
 .contact-container .contact-form textarea{
-    border-radius: 2px;
+  border-radius: 2px;
   height: 200px;
 }
 
-.contact-container .contact-form .contact-btn{
-    align-items: center;
-    padding: 10px 0px;
-    height: 40px;
-    border: none;
-    background: #ffffff;
-    color: #000000;
-    font-size: 20px;
-    transition: 1s;
+.contact-container .contact-form .contact-btn-container{
+  text-align: center;
+  font-size: 18px;
 }
-.contact-container .contact-form .contact-btn:hover{
-    background: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+.contact-container .contact-form .contact-btn-container .contact-btn{
+  padding: 12px 30px;
 }
     
 @media screen and (max-width: 768px) 

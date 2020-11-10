@@ -15,18 +15,23 @@
 
     <!--contact form-->
 <div class="contact-container">
+    <div class="contact-image">
+        <img src="../home-page/images/240_F_211309674_wutVgt4EpBSHhFCDskloGEnuzCQsz0Dl.jpg">
+    </div>
     <div class="contact-form">
         <h1>Contact Us</h1>
         <form  method="post" id="reused_form" >
             <label for="name">Name:</label>
-            <input id="name" type="text" name="Name" required maxlength="200" placeholder="Enter Name">
+            <input id="name" type="text" name="Name" class="input1" required maxlength="200" placeholder="Enter Name">
       
             <label for="email">Email Address:</label>
-            <input id="email" type="email" name="Email" required maxlength="200" placeholder="Enter Email-id">
+            <input id="email" type="email" name="Email" class="input1" required maxlength="200" placeholder="Enter Email-id">
       
             <label for="message">Message:</label>
             <textarea id="message" name="Message" rows="10" maxlength="6000" placeholder="Text Message" required></textarea>
-            <input type="submit" class="contact-btn" value="Send">
+        <div class="contact-btn-container">
+            <input type="submit" class="contact-btn" value="Send Message">
+        </div>
         </form>
     </div>
 </div>
