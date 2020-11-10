@@ -566,141 +566,169 @@ html{
 
 
 .myfooter{
+    margin-top: 50px;
     color:white;
     padding:20px;
     background-color:  #151515;
     width: 100%;
-    scroll-behavior: smooth;
-}
-
-.copy p{
-    margin-bottom: 0;
+   }
+   .full{
+       display: flex;
+   }
+   .copy p{
+       margin-bottom: 0;
+       text-align: center;
+   }
+   .myfooter .top i{
+    background: rgb(78, 74, 74) ;
+    padding:15px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color:#fff;
+   }
+   .myfooter .top i:hover{
+       transform: scale(1.05);
+   }
+   
+   .myfooter .footerlinks a{
+    display: inline-block;
+    text-decoration: none;
+    color: #66ffff;
+    font-size: 17px;
+   }
+   .myfooter .footerlinks a:hover{
+    transform:scale(1.1);
+   }
+   
+   .myfooter .footer-center,
+   .myfooter .footer-right,
+   .myfooter .footer-left{
+    display: inline-block;
+    flex:1;
+    vertical-align: top;
+   }
+   .myfooter .footer-center{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .myfooter .name{
+    vertical-align: middle;
+    color:#f4f4f4;
+    align-items: center;
+   
+   }
+   .myfooter .footer-right{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       /* align-items: jus; */
+   }
+   .myfooter .footer-right i{
+    border-radius: 50%;
+    background: rgb(78, 74, 74);
     text-align: center;
-}
-.myfooter .top i{
- background: rgb(78, 74, 74) ;
- padding:15px;
- border-radius: 5px;
- font-size: 17px;
- margin-bottom: 20px;
- color:#fff;
-}
-/* .myfooter .top i:before{
- content:none;
-} */
-.myfooter .footerlinks a{
- display: inline-block;
- text-decoration: none;
- color: #66ffff;
- font-size: 17px;
-}
-.myfooter .footerlinks a:hover{
- transform:scale(1.1);
-}
-
-.myfooter .footerleft,
-.myfooter .footercenter,
-.myfooter .footerright{
- display: inline-block;
- width:33%;
- vertical-align: top;
-}
-.myfooter .name{
- vertical-align: middle;
- color:#f4f4f4;
- align-items: center;
-
-}
-.myfooter .footercenter i{
- border-radius: 50%;
- background: rgb(78, 74, 74);
- text-align: center;
- line-height: 30px;
- width:30px;
-}
-.myfooter .footercenter p{
- display: inline;
- vertical-align: middle;
- margin:0;
- font-weight: normal;
-}
-.myfooter .footercenter a{
- text-decoration: none;
- color:#66ffff;
-}
-.myfooter .footerleft .footerlinks a:before{
- content:"|";
- font-weight: normal;
- font-size: 20px;
- color:#fff;
- padding-right: 10px;
- padding-left: 10px;
- display: inline-block;
- left:0;
-}
-.myfooter .footerleft .footerlinks .link1:before{
- content: none;
-}
-.myfooter .footerright h3{
- text-align: right;
-}
-.myfooter .footerright .footerMPAC span{
- display: block;
- color:#fff;
- font-size: 16px;
- font-weight: normal;
- font-family: 'Raleway',sans-serif;
- margin-bottom: 20px;
-}
-.myfooter .footerright{
- width:30%;
- padding-right: 0%;
-}
-.myfooter .footerright .footersocial{
-display: flex;
-justify-content: center;
-}
-.myfooter .footerright .footersocial a{
- display: inline-block;
- color:#fff;
- border-radius: 5px;
- background:rgb(78, 74, 74) ;
- line-height:30px;
- width:30px;
- text-align: center;
- margin-right: 10px;
- vertical-align: middle;
- /* justify-content: space-around; */
- /* align-items: center; */
- 
-}
-
-.myfooter .footerright .footerMPAC{
- text-align: justify;
-}
-.myfooter .footerright .footerMPAC span{
- font-weight: 900;
- text-align: center;
-}
-
-
-.container{
- min-height:calc(100vh - 76.8px - 58.4px);
-}
-@media (max-width:760px)
-{
-    .myfooter .full{
-        font-size: 14px;
-    
-    }
-    .myfooter .footerleft,
-    .myfooter .footercenter,
-    .myfooter .footerright{
-        display:block;
-        text-align: center;
-        width:100%;
-    }
-    .myfooter .footerright .footerMPAC{
-        text-align: center;
-    }
-}
+    line-height: 30px;
+    width:30px;
+   }
+   .myfooter .footer-right p{
+    display: inline;
+    vertical-align: middle;
+    margin:0;
+    font-weight: normal;
+   }
+   .myfooter .footer-right a{
+    text-decoration: none;
+    color:#66ffff;
+   }
+   .myfooter .footer-right a:hover{
+       color:#04b6b6;
+   }
+   .myfooter .footer-center .footerlinks a:before{
+    content:"|";
+    font-weight: normal;
+    font-size: 20px;
+    color:#fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    left:0;
+   }
+   .myfooter .footer-center .footerlinks .link1:before{
+    content: none;
+   }
+   .myfooter .footer-left h3{
+    text-align: right;
+   }
+   .myfooter .footer-left .footerMPAC span{
+    display: block;
+    color:#fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 20px;
+   }
+   .myfooter .footer-left{
+    width:30%;
+    padding-right: 0%;
+   }
+   .myfooter .footer-left .footersocial{
+   display: flex;
+   justify-content: center;
+   padding-bottom: 5px;
+   }
+   .myfooter .footer-left .footersocial a{
+    display: inline-block;
+    color:#fff;
+    border-radius: 4px;
+    background:rgb(78, 74, 74) ;
+    line-height:30px;
+    width:30px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+   }
+   .myfooter .footer-left .footersocial a:hover{
+       transform: scale(1.2);
+     
+   }
+   
+   .myfooter .footer-left .footerMPAC{
+    /* text-align: justify; */
+    padding-bottom: 5px;
+   }
+   .myfooter .footer-left .footerMPAC span{
+    font-weight: 900;
+    /* text-align: center; */
+   }
+   
+   /*---------------------------------------------------- IMPORTANT!!!-------------------------------------------------------- */
+   
+   
+   /* This is to make sure that the footer stays at the bottom and the class may not be .container make changes accordingly */
+   /* take the biggest div tag in body that takes up the important part */
+   #Home{
+    min-height:calc(100vh - 210.4px);
+   }
+   
+   
+   @media (max-width:760px)
+   {
+       .myfooter .full{
+           font-size: 14px;
+           flex-direction: column;
+       }
+       .myfooter .footer-center,
+       .myfooter .footer-right,
+       .myfooter .footer-left{
+           display:block;
+           text-align: center;
+           width:100%;
+       }
+       /* .myfooter .footer-left .footerMPAC{
+           text-align: center;
+       } */
+   }
