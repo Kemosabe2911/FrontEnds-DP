@@ -38,11 +38,13 @@
 }
 .dash-container .dash-item .dash-text p{
     line-height: 1.5;
+    width: 300px;
     font-size: 16px;
     padding: 20px;
 }
 .dash-container .dash-item a{
-    margin: 65px 0px;
+    margin-top: 50px;
+    height: 50px;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
@@ -53,4 +55,9 @@
     background: #ffffff;
     padding: 15px 10px;
     border: 2px solid #000000;
+    transition: 0.8s;
+}
+.dash-container .dash-item a:hover{
+    background-color: #000000;
+    color: #ffffff;
 }
